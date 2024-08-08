@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox</title>
+    <style>
+        .cards{
+            height: 800px;
+            width: 800px;
+            border-radius: 10px;
+            flex-direction: row-reverse; 
+            display: flex;
+            background-color:black;
+            margin: 5px;
+        }
+        .movies{
+            width: 350px;
+            height: 250px;
+            border-radius:  5px;
+            margin: 20px;
+            background-color: aliceblue;
+            padding: 20px;
+            position: relative;
+
+        }
+        .name{
+            font-size: x-large;
+    
+        }
+        .img{
+            position: absolute;
+            left: 100px;
+            top: 130px;
+            height: 50px;
+            width: 50px;
+        }    
+
+         .card1{
+            height: 800px;
+            width: 800px;
+            border-radius: 5px;
+            flex-direction: column; 
+            display: flex;
+            background-color:black;
+            top: 1000px;
+            position: absolute;
+
+        }
+        .card2{
+            height: 800px;
+            width: 800px;
+            border-radius: 5px;
+            flex-direction: row; 
+            display: flex;
+            background-color:black;
+            position: absolute;
+            justify-content: start;
+            align-items: center;
+
+        }
+         
+        .card3{
+            height: 800px;
+            width: 800px;
+            border-radius: 5px;
+            flex-direction: row; 
+            display: flex;
+            background-color:black;
+            position: relative;
+            justify-content:  end;
+            bottom: 200px;
+
+        }
+        
+        .card4{
+            height: 800px;
+            width: 800px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content:  center;
+            background-color:black;
+            border-radius: 5px;
+        }
+        .card5{
+            height: 800px;
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            justify-content:  space-between;
+            background-color:black;
+            border-radius: 5px;
+        }
+
+        .card6{
+            height: 800px;
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            justify-content:  space-evenly;
+            background-color:black;
+            border-radius: 5px;
+            flex-wrap: wrap;
+
+        }
+
+        .card7{
+            height: 800px;
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content:  start;
+            background-color:black;
+            border-radius: 5px;
+            align-items: start;
+        }
+
+        .card8{
+            height: 800px;
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            justify-content:  start;
+            background-color:black;
+            border-radius: 5px;
+            align-items: end;
+        }
+        .card9{
+            height: 800px;
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content:  space-around;
+            background-color:black;
+            border-radius: 5px;
+            
+        }
+
+    </style>
+</head>
+<body>
+   <h1>Movies cards</h1>
+   <div class="cards">
+    <div class="movies">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHqsEs0XFtzh-szHTqsmnm6r7wV6Nzq554bw&s">
+    <img class="img" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png">
+    <b class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Morbius</b>
+</div>
+ </div>
+
+
+ <div class="card1">
+    <div class="movies">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHqsEs0XFtzh-szHTqsmnm6r7wV6Nzq554bw&s">
+    <img class="img" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png">
+    <b class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Morbius</b>
+</div>
+ </div>
+
+
+ <div class="card2">
+    <div class="movies">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx-F5hrJfs2xY-50o9Smn15wV8j98fQXD09A&s">
+        <img class="img" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png">
+        <b class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Witcher</b>
+    </div>
+    </div>
+ 
+    <div class="card3">
+     <div class="movies">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHuXdCzsAfVVILCwYGx8j3DdGDR022zjmhIA&s">
+    <img class="img" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png">
+     <b class="name"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hobbit</b>
+    </div>
+     </div>
+
+     <div class="card4">
+         <div class="movies">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJL-RY33L0Wsc_VZ5jPotYO_XqGzsVb2sU1g&s">
+         <img class="img" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png">
+         <b class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noah</b>
+         </div>
+        </div>
+
+     <div class="card5">
+        <div class="movies">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf2fFo0MVK1k0cayLsW2XmgNvHMs1uiDbjSw&s">
+         <img class="img" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png">
+          <b class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hobbit</b>
+          </div>
+            </div>
+
+         <div class="card6">
+        <div class="movies">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdW4i2w8lk5lo4AAPiDBqIr2WpOdN95AwF9A&s">
+           <img class="img" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png">
+          <b class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mockingjay</b>
+          </div>
+          </div>
+
+         <div class="card7">
+         <div class="movies">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWyiw82IAUhd5LYun0nxh2P3CjTnA9myo8w&s">
+         <img class="img" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png">
+         <b class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bhoot police</b>
+         </div>
+        </div>
+
+        <div class="card8">
+        <div class="movies">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAntmGMRUxi-k9cu4TEncUVqh7DkhOWyZZEQ&s">
+         <img class="img" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png">
+         <b class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;joker</b>
+         </div>
+         </div>
+
+       <div class="card9">
+         <div class="movies">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrqANAVs8uaPjZhoVqRiPG879mveTxZOqbbQ&s">
+        <img class="img" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png">
+        <b class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wanted</b>
+        </div>
+         </div>
+                    
+</body>
+</html>
